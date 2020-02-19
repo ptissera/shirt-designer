@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "shirt-designer": {
+    "t-shirt-designer": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/shirt-designer",
+            "outputPath": "dist/t-shirt-designer",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "shirt-designer:build"
+            "browserTarget": "t-shirt-designer:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "shirt-designer:build:production"
+              "browserTarget": "t-shirt-designer:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "shirt-designer:build"
+            "browserTarget": "t-shirt-designer:build"
           }
         },
         "test": {
@@ -115,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "shirt-designer:serve"
+            "devServerTarget": "t-shirt-designer:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "shirt-designer:serve:production"
+              "devServerTarget": "t-shirt-designer:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "shirt-designer"
+  "defaultProject": "t-shirt-designer"
 }
